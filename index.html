@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./check.css">
+    <script src="./check.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- HTML here -->
+
+    <div id="calculator">
+        <div id="resultSpace">
+            <input type="text" id="input" placeholder="0" disabled/>
+        </div>
+        <div id="controlSpace">
+            <div id="settingControls">
+                <button value="0" id="block0" onclick="calculate(event)">0</button>
+                <button value="." id="dot" onclick="calculate(event)">.</button>
+                <button value="Clear" id="clear" onclick="calculate(event)">Clear</button>
+                <button value="=" id="ans" onclick="calculate(event)">=</button>
+
+            </div>
+
+            <div id="numbers">
+                <div id="firstRow">
+                    <button value="1" id="block1" onclick="calculate(event)">1</button>
+                    <button value="2" id="block2" onclick="calculate(event)">2</button>
+                    <button value="3" id="block3" onclick="calculate(event)">3</button>
+                </div>
+                <div id="secondRow">
+                    <button value="4" id="block4" onclick="calculate(event)">4</button>
+                    <button value="5" id="block5" onclick="calculate(event)">5</button>
+                    <button value="6" id="block6" onclick="calculate(event)">6</button>
+                </div>
+                <div id="thirdRow">
+                    <button value="7" id="block7" onclick="calculate(event)">7</button>
+                    <button value="8" id="block8" onclick="calculate(event)">8</button>
+                    <button value="9" id="block9" onclick="calculate(event)">9</button>
+                </div>
+
+                <div id="operationArithmetic">
+                    <button value="+" id="plus" onclick="calculate(event)">+</button>
+                    <button value="-" id="minus" onclick="calculate(event)">-</button>
+                    <button value="*" id="multiply" onclick="calculate(event)">x</button>
+                    <button value="/" id="divide" onclick="calculate(event)">/</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <button class="load-more-days-button">Click</button>
+</body>
+
+</html>
